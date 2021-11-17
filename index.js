@@ -18,3 +18,7 @@ app.get('/apagar',function(req,res){
         led.writeSync(0);
         res.sendFile(path.join(__dirname+'/html/index.html'));
 });
+app.listen(8000, function () {
+    console.log('Servidor corriendo en el puerto 8000');
+ });
+ 
